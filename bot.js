@@ -106,5 +106,11 @@ client.on('warn', e => {
 client.on('error', e => {
   console.log(chalk.bgRed(e.replace(regToken, 'that was redacted')));
 });
+client.on('message', msg => {
+  if (msg.content === 'discord.gg') {
+   msg.delete(30)
+    msg.reply('Reklam Engellendi');
+  }
+});
 
 client.login(process.env.BOT_TOKEN);
