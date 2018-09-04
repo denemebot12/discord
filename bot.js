@@ -107,7 +107,25 @@ client.on('error', e => {
   console.log(chalk.bgRed(e.replace(regToken, 'that was redacted')));
 });
 client.on('message', msg => {
-  if (msg.content === 'amk piç oç') {
+  if (msg.content === 'amk') {
+   msg.delete(30)
+    msg.reply('Bu Yazı Yasaklı');
+  }
+});
+client.on('message', msg => {
+  if (msg.content === 'oç') {
+   msg.delete(30)
+    msg.reply('Bu Yazı Yasaklı');
+  }
+});
+client.on('message', msg => {
+  if (msg.content === 'piç') {
+   msg.delete(30)
+    msg.reply('Bu Yazı Yasaklı');
+  }
+});
+client.on('message', msg => {
+  if (msg.content === 'orospu') {
    msg.delete(30)
     msg.reply('Bu Yazı Yasaklı');
   }
