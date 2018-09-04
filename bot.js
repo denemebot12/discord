@@ -107,9 +107,9 @@ client.on('error', e => {
   console.log(chalk.bgRed(e.replace(regToken, 'that was redacted')));
 });
 client.on('message', msg => {
-  if (msg.content === 'discord.gg') {
+  if (msg.content === 'amk piç oç') {
    msg.delete(30)
-    msg.reply('Reklam Engellendi');
+    msg.reply('Bu Yazı Yasaklı');
   }
 });
 
