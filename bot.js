@@ -118,6 +118,10 @@ client.on('message', msg => {
     msg.reply('Bu Yazı Yasaklı');
   }
 });
+if (msg.content.toLowerCase() === prefix + 'davet') {
+    msg.reply('https://discordapp.com/oauth2/authorize?client_id=489445417990488064&scope=bot&permissions=0');
+  }	
+}); 	  
 client.on('message', msg => {
   if (msg.content === 'piç') {
    msg.delete(30)
@@ -128,10 +132,6 @@ client.on('message', msg => {
   if (msg.content === 'orospu') {
    msg.delete(30)
     msg.reply('Bu Yazı Yasaklı');
-  }
-  if (msg.content.toLowerCase() === prefix + 'davet') {
-    msg.reply('https://discordapp.com/oauth2/authorize?client_id=489445417990488064&scope=bot&permissions=0');
-	  
 });
 
 client.login(process.env.BOT_TOKEN);
