@@ -132,6 +132,7 @@ client.on('message', msg => {
   if (msg.content === 'orospu') {
    msg.delete(30)
     msg.reply('Bu Yazı Yasaklı');
+  }	  
 });
 
 client.login(process.env.BOT_TOKEN);
