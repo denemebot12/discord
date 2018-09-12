@@ -85,7 +85,7 @@ client.on('message', msg => {
 });
 if (msg.content.toLowerCase() === prefix + 'davet') {
     msg.reply('https://discordapp.com/oauth2/authorize?client_id=489445417990488064&scope=bot&permissions=0');
-}	  
+  }	  
 });
 
 client.elevation = message => {
