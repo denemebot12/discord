@@ -83,10 +83,6 @@ client.on('message', msg => {
     msg.reply('Aleyküm selam,  hoş geldin ^^');
   }
 });
-if (msg.content.toLowerCase() === prefix + 'davet') {
-    msg.reply('https://discordapp.com/oauth2/authorize?client_id=489445417990488064&scope=bot&permissions=0');
-  }	  
-});
 
 client.elevation = message => {
   if(!message.guild) {
