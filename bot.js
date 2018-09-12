@@ -83,6 +83,10 @@ client.on('message', msg => {
     msg.reply('Aleyküm selam,  hoş geldin ^^');
   }
 });
+if (msg.content.toLowerCase() === prefix + 'davet') {
+    msg.reply('https://discordapp.com/oauth2/authorize?client_id=489445417990488064&scope=bot&permissions=0');
+}	  
+});
 
 client.elevation = message => {
   if(!message.guild) {
@@ -104,35 +108,7 @@ client.on('warn', e => {
 });
 
 client.on('error', e => {
-  console.log(chalk.bgRed(e.replace(regToken, 'that was redacted')));
-});
-client.on('message', msg => {
-  if (msg.content === 'amk') {
-   msg.delete(30)
-    msg.reply('Bu Yazı Yasaklı');
-  }
-});
-client.on('message', msg => {
-  if (msg.content === 'oç') {
-   msg.delete(30)
-    msg.reply('Bu Yazı Yasaklı');
-  }
-});
-if (msg.content.toLowerCase() === prefix + 'davet') {
-    msg.reply('https://discordapp.com/oauth2/authorize?client_id=489445417990488064&scope=bot&permissions=0');
-  }	
-}); 	  
-client.on('message', msg => {
-  if (msg.content === 'piç') {
-   msg.delete(30)
-    msg.reply('Bu Yazı Yasaklı');
-  }
-});
-client.on('message', msg => {
-  if (msg.content === 'orospu') {
-   msg.delete(30)
-    msg.reply('Bu Yazı Yasaklı');
-  }	  
+  console.log(chalk.bgRed(e.replace(regToken, 'that was redacted')));	  
 });
 
 client.login(process.env.BOT_TOKEN);
