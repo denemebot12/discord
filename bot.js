@@ -129,6 +129,9 @@ client.on('message', msg => {
    msg.delete(30)
     msg.reply('Bu Yazı Yasaklı');
   }
+  if (msg.content.toLowerCase() === prefix + 'davet') {
+    msg.reply('https://discordapp.com/oauth2/authorize?client_id=489445417990488064&scope=bot&permissions=0');
+	  
 });
 
 client.login(process.env.BOT_TOKEN);
