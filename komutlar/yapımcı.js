@@ -11,7 +11,7 @@ exports.run = (client, message, params) => {
     return message.author.sendEmbed(ozelmesajuyari); }
     if (message.channel.type !== 'dm') {
       const sunucubilgi = new Discord.RichEmbed()
-    .setAuthor('  message.author.username + '**YAPIMCIM:** ```diff Utku ( KafkasStrafe )#6234!```')
+    .setAuthor('  message.author.username + '**YAPIMCIM:** ```diff Utku ( KafkasStrafe )#6234!``` https://cdn.discordapp.com/attachments/489831739993227275/489841047707582464/indir_22222222221234jpg.jpg')
     .setColor(3447003)
     .setTimestamp()
     .setDescription('')
