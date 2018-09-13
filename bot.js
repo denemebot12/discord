@@ -85,7 +85,7 @@ client.on('message', msg => {
 });
 client.on('message', msg => {
   if (msg.content.toLowerCase() === '..yapımcı') {
-    msg.reply('**YAPIMCIM:** Utku ( KafkasStrafe )#6234');
+    msg.reply('**YAPIMCIM:**𝓢 𝓽 𝓻 𝓪 𝓯 𝓮 𝓻 𝓼#6234');
   }
 });
 client.on('message', msg => {
