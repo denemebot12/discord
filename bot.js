@@ -84,12 +84,6 @@ client.on('message', msg => {
   }
 });
 client.on('message', msg => {
-  if (msg.content.toLowerCase() === '..kurallar') {
-    msg.reply('**-kurallarımız aynen şöyledir biri rahatsız olmadıkça küfür edebilirsiniz fakat istemeden küfür ederseniz bu şikayet sebebidir,
--şikayet etmek için bir yetkiliye report şüpheli adı  ve şikayet sebebi,-ve bide aşırı küfür sonucunda 3 gün sağırlaştırma ve susturulma yiyeceksiniz,-spam yasaktır spam sonucu yazmanız engellenecek bir süre sonra açılacaktır** ');
-  }
-});
-client.on('message', msg => {
   if (msg.content.toLowerCase() === '..yapımcı') {
     msg.reply('**YAPIMCIM:** Utku ( KafkasStrafe )#6234');
   }
