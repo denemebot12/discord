@@ -15,7 +15,7 @@ exports.run = (client, message, params) => {
     .setColor(3447003)
     .setTimestamp()
     .setDescription('')
-		.setImage(`https://cdn.discordapp.com/attachments/489831739993227275/489841047707582464/indir_22222222221234jpg.jpg`)
+    .setImage(`https://cdn.discordapp.com/attachments/489831739993227275/489841047707582464/indir_22222222221234jpg.jpg`)
     return message.channel.sendEmbed(sunucubilgi);
     }
 };
