@@ -94,6 +94,22 @@ client.on('message', msg => {
   }
 });
 
+client.on("guildMemberAdd", member => {
+
+  var channel = member.guild.channels.find("name", "giriş-çıkış");
+  if (!channel) return;
+
+  var role = member.guild.roles.find("name", "üye");
+  if (!role) return;
+
+  member.addRole(role);
+
+  channel.send(member + "artık" + role + "rolü ile giriş yaptı");
+
+  member.send("Aramıza hoş geldin! Artık Üye Rolune Sahipsin")
+
+});
+
 client.elevation = message => {
   if(!message.guild) {
 	return; }
