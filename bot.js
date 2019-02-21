@@ -85,7 +85,7 @@ client.on('message', msg => {
 });
 client.on('message', msg => {
   if (msg.content.toLowerCase() === '..yapımcı') {
-    msg.reply('**YAPIMCIM:**King Strafers | KafkasStrafe#7264');
+    msg.reply('**YAPIMCIM:**Kafkas.exe#7264');
   }
 });
 client.on('message', msg => {
